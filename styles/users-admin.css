@@ -1,0 +1,321 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Penambahan admin dashboard */
+section {
+  width: calc(100% - 330px);
+  margin-left: 330px;
+  margin-top: 19px;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+}
+
+h1 {
+  color: white;
+  margin-left: 15px;
+}
+img {
+  margin-right: 15px;
+}
+
+aside {
+  position: fixed;
+  top: 53px;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+.sidebar {
+  background-color: #f1f1f1;
+  width: 300px;
+  border-radius: 0 10px 10px 0;
+  margin-top: 15px;
+  box-shadow: 2px 3px 5px #858585;
+  height: 94vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sidebar a {
+  color: black;
+  padding: 20px 0 20px 0;
+  padding-left: 40px;
+  font-size: 25px;
+  transition: background 0.5s;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+}
+
+.sidebar ul {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.logo-utama {
+  display: flex;
+  align-items: center;
+}
+
+.logo-utama img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.utama {
+  text-align: center;
+}
+
+.utama h2,
+.utama span {
+  color: black;
+}
+
+.content h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  color: black;
+}
+
+/* Tabel */
+
+table {
+  width: 97%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: rgb(24, 199, 24);
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.main-content {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #6ddf88;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-button:hover {
+  background-color: #6ddf88;
+}
+
+.navbar-brand img {
+  margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgb(35, 96, 210);
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-width: 100px;
+}
+
+.dropdown {
+  padding-top: 10px;
+  float: right;
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #007bff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.alert {
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alert span {
+  font-weight: bold;
+}
+
+.sign-out {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.sign-out:hover {
+  background-color: #c82333;
+}
+
+/* Content Styles */
+.mt-5 {
+  margin-top: 80px;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  font-size: 24px;
+  color: #888;
+}
+
+/* Card Styles */
+.cardImg {
+  width: 47%; /* Lebar card sedikit lebih kecil agar lebih rapat */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardImg img {
+  width: 87%; /* Membuat gambar mengisi penuh lebar card */
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardImg img:hover {
+  transform: scale(1.05);
+}
+
+/* Flexbox Layout for Card Container */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Gunakan space-between agar jarak antar card seragam */
+  gap: 10px; /* Mengurangi gap antar card untuk hasil lebih rapat */
+  max-width: 1280px; /* Menetapkan lebar maksimal container */
+  margin: 0 auto; /* Membuat container berada di tengah */
+}
+
+/* Member dan Buku card - memastikan konsistensi jarak antar kiri dan kanan */
+.cardImg:nth-child(1),
+.cardImg:nth-child(2) {
+  padding: 0 10px; /* Mengurangi padding untuk card pertama dan kedua */
+}
+
+/* Card Denda tetap di tengah */
+.cardImg.denda-card {
+  width: 100%; /* Card "Denda" tetap mengambil seluruh lebar baris */
+  display: flex;
+  justify-content: center; /* Memastikan gambar "Denda" di tengah */
+  text-align: center;
+}
+
+.cardImg.denda-card img {
+  width: 70%; /* Gambar Denda 70% */
+}
+
+/* Responsiveness untuk tampilan lebih kecil */
+@media (max-width: 768px) {
+  .cardImg {
+    width: 100%; /* Card mengambil seluruh lebar di perangkat kecil */
+  }
+
+  .cardImg.denda-card img {
+    width: 80%; /* Gambar "Denda" lebih besar pada perangkat kecil */
+  }
+}

@@ -1,0 +1,389 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Tambahkan margin-top pada bagian kategori dan form pencarian */
+.filter-buttons {
+    margin-top: 100px; /* Menambahkan jarak agar tidak tertutup navbar */
+  }
+  
+  .search-form {
+    margin-top: 20px; /* Memberi jarak tambahan jika diperlukan */
+  }
+  
+/* Navbar */
+
+/* .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-width: 100px;
+    margin: 0;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+} */
+
+
+.navbar {
+  background-color: rgb(35, 96, 210);
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-width: 100px;
+}
+
+.dropdown {
+  padding-top: 10px;
+  float: right;
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.dropdown-menu li {
+  margin: 10px 0;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #007bff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.alert {
+  background-color: #28a745;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.alert span {
+  font-weight: bold;
+}
+
+.sign-out {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.sign-out:hover {
+  background-color: #c82333;
+}
+
+/* Search Bar */
+.search-form { 
+    text-align: center; 
+}
+
+/* .navbar-box a {
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ddd;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+.navbar-box a:hover {
+    background-color: #a09f9f;
+} */
+
+.search-input {
+    padding: 10px;
+    margin-left: 1218px;
+    width: 300px;
+    margin-top: 70px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #6ddf88;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #5bbf7f;
+}
+
+/* sidebar */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Penambahan admin dashboard */
+section {
+    width: calc(100% - 330px);
+    margin-left: 330px;
+    margin-top: 19px;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    color: white;
+    margin-left: 15px;
+}
+img {
+    margin-right: 15px;
+}
+
+aside {
+    position: fixed;
+    top: 53px;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    width: 300px;
+    position: fixed;
+    border-radius: 0 10px 10px 0;
+    margin-top: 15px;
+    box-shadow: 2px 3px 5px #858585;
+    height: 94vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar a {
+    color : black;
+    padding: 20px 0 20px 0;
+    padding-left: 40px;
+    font-size: 25px;
+    transition: background 0.5s;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.sidebar ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.logo-utama {
+    display: flex;
+    align-items: center;
+}
+
+.logo-utama img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.utama {
+    text-align: center;
+}
+
+
+.utama h2, .utama span {
+    color: black;
+}
+
+.content h1{
+    margin-top: 20px;
+    font-size: 40px;
+    color: black;
+}
+
+/* Card Layout */
+.card-container {
+    display: grid;
+    margin-left: 300px; 
+    /* width: 85%; */
+    grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
+    gap: 1rem;
+    padding: 20px;
+    grid-auto-rows: 1fr; /* Keep cards with consistent height */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Gambar buku */
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Menjamin gambar memenuhi area dengan proporsi yang benar */
+}
+
+/* Card body */
+.card-body {
+    padding: 15px;
+    flex-grow: 1; /* Membuat area body kartu mengambil sisa ruang kartu */
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card-actions .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.card-actions .btn-edit {
+    background-color: #28a745;
+}
+
+.card-actions .btn-edit:hover {
+    background-color: #218838;
+}
+
+.card-actions .btn-delete {
+    background-color: #dc3545;
+}
+
+.card-actions .btn-delete:hover {
+    background-color: #c82333;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 15px; /* Mengurangi padding untuk membuat footer lebih kecil */
+    position: relative;
+  }
+  
+  .footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer .author {
+    font-weight: bold;
+  }
+  
+  .author {
+    font-weight: bold;
+  }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-buttons {
+        margin-top: 10px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr; /* 2 cards per row on smaller screens */
+    }
+}

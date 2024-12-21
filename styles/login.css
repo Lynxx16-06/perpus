@@ -1,0 +1,105 @@
+/* Reset dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  /* Gaya untuk card */
+  .card {
+    background-color: #fff;
+    width: 30rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header dengan gambar di kiri */
+  .card-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .card-img-left {
+    width: 30%; /* Lebar gambar 30% */
+    height: auto; /* Menjaga proporsi gambar */
+    object-fit: contain; /* Pastikan seluruh gambar terlihat */
+    margin-right: 20px; /* Jarak antar gambar dan teks */
+  }
+  
+  .card-header-text {
+    flex: 1; /* Teks memenuhi sisa ruang */
+  }
+  
+  .card-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .card-header p {
+    margin: 5px 0 0;
+    color: #555;
+  }
+  
+  /* Gaya untuk body */
+  .card-body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-body h4 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  
+  /* Tombol */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Garis horizontal */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  

@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    height: 40px;
+}
+
+.dashboard-btn {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #34495e;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-btn:hover {
+    background-color: #1abc9c;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.table-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.table th {
+    background-color: #16a085;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table td {
+    color: #333;
+}
+
+/* Delete Button */
+.delete-btn {
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.delete-btn:active {
+    background-color: #a93226;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 15px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .author {
+    color: #1abc9c;
+}

@@ -1,0 +1,213 @@
+/* Menambahkan pengaturan dasar untuk body dan html */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Wrapper utama untuk memastikan footer tetap di bawah halaman */
+  .body-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* Menjaga agar footer selalu di bawah jika halaman lebih pendek dari layar */
+  }
+  
+  .content {
+    flex: 1; /* Mengisi ruang yang tersedia, membuat footer tetap di bawah konten */
+    padding: 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #2c3e50;
+    color: white;
+    height: 50px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    height: 40px;
+  }
+  
+  .dashboard-btn {
+    position: absolute;
+    top: 15px;
+    right: 50px; /* Position the button in the top-right corner */
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #34495e;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-btn:hover {
+    background-color: #1abc9c;
+  }
+  
+  /* Filter Buttons */
+  .filter-buttons {
+    margin-top: 100px; /* Memberikan jarak agar tidak tertutup navbar */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .filter-buttons .btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons .btn-outline {
+    background-color: transparent;
+    border: 2px solid #6ddf88;
+    color: #6ddf88;
+  }
+  
+  .filter-buttons .btn-primary {
+    background-color: #5bbf7f;
+    color: white;
+  }
+  
+  /* Search Form */
+  .search-form {
+    margin-top: 20px;
+    margin-right: 50px;
+    gap: 20px;
+  }
+  
+  .search-form .search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .search-form .search-input {
+    padding: 8px;
+    border-radius: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-button {
+    background-color: #6ddf88;
+    color: white;
+    padding: 8px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* Card Display */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .card-info {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .card-footer {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card-footer .btn-success {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 15px; /* Mengurangi padding untuk membuat footer lebih kecil */
+  }
+  
+  .footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer .author {
+    font-weight: bold;
+  }
+  
+  .author {
+    font-weight: bold;
+  }
+  
+  /* Media Query untuk Responsif */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-form .search-input {
+      width: 200px;
+    }
+  
+    .filter-buttons {
+      flex-direction: column;
+    }
+  }
+  
